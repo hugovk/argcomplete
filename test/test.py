@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 
 import os, sys, shutil, argparse, subprocess, unittest, contextlib
 import pexpect, pexpect.replwrap

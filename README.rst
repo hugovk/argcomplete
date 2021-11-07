@@ -30,7 +30,7 @@ Python code (e.g. ``my-awesome-script``):
 
 .. code-block:: python
 
-    #!/usr/bin/env python
+    #!/usr/bin/env python3
     # PYTHON_ARGCOMPLETE_OK
     import argcomplete, argparse
     parser = argparse.ArgumentParser()
@@ -132,7 +132,7 @@ organization and complete their names, then prints the member description:
 
 .. code-block:: python
 
-    #!/usr/bin/env python
+    #!/usr/bin/env python3
     # PYTHON_ARGCOMPLETE_OK
     import argcomplete, argparse, requests, pprint
 

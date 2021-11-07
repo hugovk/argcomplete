@@ -19,8 +19,6 @@ def debug(*args):
             # Attempting to write unicode directly uses the default ascii conversion.
             # Convert any unicode to bytes, leaving non-string input alone.
             args = [ensure_bytes(x) if isinstance(x, str) else x for x in args]
-        print(sys.version_info)
-        assert sys.version_info[0] == 3
         print(file=debug_stream, *args)
 
 BASH_FILE_COMPLETION_FALLBACK = 79
