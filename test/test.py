@@ -30,7 +30,7 @@ from argcomplete import (
     warn
 )
 from argcomplete.completers import FilesCompleter, DirectoriesCompleter, SuppressCompleter
-from argcomplete.compat import USING_PYTHON2, str, sys_encoding, ensure_str, ensure_bytes
+from argcomplete.compat import USING_PYTHON2, sys_encoding, ensure_str, ensure_bytes
 
 IFS = "\013"
 COMP_WORDBREAKS = " \t\n\"'><=;|&(:"

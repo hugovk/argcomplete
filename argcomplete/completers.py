@@ -5,7 +5,7 @@ from __future__ import absolute_import, division, print_function, unicode_litera
 
 import os
 import subprocess
-from .compat import str, sys_encoding
+from .compat import sys_encoding
 
 def _call(*args, **kwargs):
     try:
