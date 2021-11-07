@@ -2,7 +2,7 @@ test_deps:
 	python3 -m pip install .[test]
 
 lint: test_deps
-	./setup.py flake8
+	python3 setup.py flake8
 	for script in scripts/*; do if grep -q python3 $$script; then flake8 $$script; fi; done
 
 test: lint test_deps
@@ -15,9 +15,9 @@ docs:
 	sphinx-build docs docs/html
 
 install: clean
-	pip install wheel
+	python3 -m pip install wheel
 	python3 setup.py bdist_wheel
-	pip install --upgrade dist/*.whl
+	python3 -m pip install --upgrade dist/*.whl
 
 clean:
 	-rm -rf build dist
