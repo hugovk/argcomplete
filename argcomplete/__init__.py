@@ -1,7 +1,7 @@
 # Copyright 2012-2019, Andrey Kislyuk and argcomplete contributors.
 # Licensed under the Apache License. See https://github.com/kislyuk/argcomplete for more info.
 
-from __future__ import absolute_import, division, print_function, unicode_literals
+from __future__ import absolute_import, division, unicode_literals
 
 import os, sys, argparse, contextlib
 from . import completers, my_shlex as shlex
