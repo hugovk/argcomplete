@@ -1,16 +1,9 @@
 #!/usr/bin/env python
 
-
 import os, sys, shutil, argparse, subprocess, unittest, contextlib
 import pexpect, pexpect.replwrap
 from tempfile import TemporaryFile, NamedTemporaryFile, mkdtemp
-
-try:
-    # Python 2
-    from cStringIO import StringIO
-except ImportError:
-    # Python 3
-    from io import StringIO
+from io import StringIO
 
 TEST_DIR = os.path.abspath(os.path.dirname(__file__))  # noqa
 BASE_DIR = os.path.dirname(TEST_DIR)  # noqa
