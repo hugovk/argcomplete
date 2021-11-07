@@ -1213,7 +1213,7 @@ class TestBash(_TestSh, unittest.TestCase):
     def test_one_space_after_exact(self):
         """Test exactly one space is appended after an exact match."""
         # Actual command run is 'echo "prog basic foo "'.
-        assert sys.version_info[0] == 3
+        self.assertEqual(sys.version_info[0], 3)
         result = self.sh.run_command('prog basic f\t"\1echo "')
         self.assertEqual(result, 'prog basic foo \r\n')
 
